@@ -1,0 +1,218 @@
+/* Normalize */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root */
+:root {
+  /* Colors */
+  --main-color1: rgb(0, 155, 255);
+  --main-color2: rgb(255, 25, 0);
+
+  --sec-color1: rgb();
+  --sec-color2: rgb();
+
+  /* Shadows */
+  --main-shadow1: rgba(0, 155, 255, 0.5);
+  --main-shadow2: rgba(255, 25, 0, 0.5);
+
+  --sec-shadow1: rgba();
+  --sec-shadow2: rgba();
+}
+
+/* Components */
+body {
+  min-height: 100vh;
+  text-transform: capitalize;
+  text-align: center;
+  background-image: linear-gradient(65deg, var(--main-color1), var(--main-color2), var(--main-color1), var(--main-color2), var(--main-color1));
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: unset;
+}
+
+p {
+  direction: rtl;
+  font-size: small;
+  font-weight: bold;
+  max-width: 75%;
+  margin: 2% auto;
+  padding: 1%;
+  color: rgb(225, 225, 225);
+  line-height: 1.5;
+  border-radius: 10px;
+  background-image: linear-gradient(315deg, rgb(128, 128, 128, 0.5), rgb(0, 0, 0, 0.5));
+  box-shadow: 0 1px 4px black;
+}
+
+/* Page Style */
+/* Header */
+header {
+  margin-bottom: 25px;
+}
+
+header .header-div {
+  position: relative;
+  display: flex;
+  box-shadow: 0 1px 4px;
+  flex-direction: column;
+  align-items: center;
+}
+
+header figure {
+  padding: 2% 1% 1%;
+  max-width: 50%;
+  display: inline-block;
+}
+
+header img {
+  width: 75%;
+}
+
+header figcaption {
+  text-align: center;
+}
+
+header .fs-large {
+  font-weight: bold;
+  font-size: larger;
+}
+
+header .fs-small {
+  font-size: small;
+}
+
+header span {
+  display: block;
+}
+
+header nav {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header nav a {
+  padding: 1%;
+  border-radius: 10%;
+  box-shadow: -2px -2px 2px;
+  flex-basis: 15%;
+}
+
+/* About */
+main section {
+  margin-bottom: 50px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+main .about {
+  min-height: 100vh;
+  background-image: url(../images/about-bg.jpg);
+  background-position: center;
+  background-size: 101% 101%;
+}
+
+main h1 {
+  padding: 1%;
+  letter-spacing: 1vw;
+  background-color: var(--main-shadow2);
+}
+
+/* Hookhas, Accessories and Tobaco */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1%;
+}
+
+.gallery a {
+  display: inline-block;
+  margin: 1%;
+  width: 22%;
+}
+
+main img {
+  display: inline-block;
+  width: 100%;
+}
+
+details>summary:first-of-type {
+  display: unset;
+}
+
+.tobaco summary:last-child {
+  padding-bottom: 1px;
+}
+
+.tobacoBox p {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.tobacoBox img {
+  margin: 0 5px;
+  width: 25px;
+}
+
+/* Footer */
+footer i {
+  color: rgb(0, 200, 0);
+  padding: 5px;
+  background-image: radial-gradient(white, rgba(211, 211, 211, 0.75), white);
+  border-radius: 5px;
+}
+
+/* Media Query */
+@media (min-width: 768px) {
+  header .header-div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header img {
+    max-width: 50%;
+  }
+
+  header .fs-large {
+    font-size: xx-large;
+  }
+
+  header nav {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  header nav a:hover {
+    transform: scale(1.2);
+  }
+
+  p {
+    font-size: large;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: large;
+  }
+}
+
+@media (min-width: 1200px) {
+  header nav a{
+    font-size: larger;
+  }
+  p {
+    font-size: x-large;
+  }
+}

@@ -150,14 +150,24 @@ details>summary:first-of-type {
   display: unset;
 }
 
+.more{
+  border-radius: 5px;
+  width: fit-content;
+  cursor: pointer;
+}
+
 .tobaco summary:last-child {
   padding-bottom: 1px;
 }
-
+.tobacoBox{
+  display: flex;
+}
 .tobacoBox p {
   width: fit-content;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-basis: 45%;
 }
 
 .tobacoBox img {

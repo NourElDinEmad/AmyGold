@@ -182,6 +182,9 @@ footer i {
   background-image: radial-gradient(white, rgba(211, 211, 211, 0.75), white);
   border-radius: 5px;
 }
+footer p{
+  width: 50%;
+}
 
 /* Media Query */
 @media (min-width: 768px) {
